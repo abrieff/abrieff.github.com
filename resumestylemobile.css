@@ -1,0 +1,35 @@
+header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: Helvetica, Arial, serif; 
+  background: #2e7bcf;
+  border-bottom: solid 1px #275da1;
+}
+
+body {
+  background-color: #F0F0F0;
+}
+
+h1 {
+  text-align: center;
+  color: white; 
+  font-size: 70px;
+  font-family: Century Gothic, sans-serif;
+  }
+ h2, h3, p { 
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  }
+  p {
+	line-height: 2em;
+	}
+p.bio{
+	font-size: 22px;
+	}
+img.resize{
+    width:540px; /* you can use % */
+    height: auto;
+    margin-left: 32%;
+    margin-top:5%;
+}
