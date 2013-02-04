@@ -1,6 +1,4 @@
 header {
-  padding-top: 10px;
-  padding-bottom: 10px;
   font-family: Helvetica, Arial, serif; 
   background: #2e7bcf;
   border-bottom: solid 1px #275da1;
@@ -20,10 +18,10 @@ h1 {
   text-align: center;
   }
   p {
-	line-height: 2em;
+	line-height: 1.3em;
 	}
 p.bio{
-	font-size: 15px;
+	font-size: 10px;
 	}
 img.resize{
     width:540px; /* you can use % */
