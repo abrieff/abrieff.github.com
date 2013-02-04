@@ -24,7 +24,7 @@ p.bio{
 	font-size: 10px;
 	}
 img.resize{
-    width:540px; /* you can use % */
+    width:480px; /* you can use % */
     height: auto;
     margin-left: 32%;
     margin-top:5%;
