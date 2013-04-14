@@ -335,7 +335,7 @@ function game_over(){
     game_over_count++;
     send_data = {"game_title":"frogger", "username":name, "score":score}
     jQuery.ajax({
-          url: <Url of the action>,
+          url: "http://tuftsdev.github.io/WebProgramming/assignments/lab1.html",
           type: "POST",
           data: {highscores: JSON.stringify(send_data)},
           dataType: "json",
@@ -343,7 +343,7 @@ function game_over(){
             if (x && x.overrideMimeType) {
               x.overrideMimeType("application/j-son;charset=UTF-8");
             }
-          });
+          }});
     if (score > highscore){
     highscore = score;
     }
