@@ -337,7 +337,7 @@ function game_over(){
     jQuery.ajax({
           url: "http://highscoresapp.herokuapp.com/submit.json",
           type: "POST",
-          data: {JSON.stringify(send_data)},
+          data: send_data,
           dataType: "json",
           beforeSend: function(x) {
             if (x && x.overrideMimeType) {
