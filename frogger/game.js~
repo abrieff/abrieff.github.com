@@ -335,15 +335,19 @@ function game_over(){
     game_over_count++;
     send_data = {"game_title":"frogger", "username":name, "score":score}
     jQuery.ajax({
-          url: "http://tuftsdev.github.io/WebProgramming/assignments/lab1.html",
+          url: "http://highscoresapp.herokuapp.com/submit.json",
           type: "POST",
-          data: {highscores: JSON.stringify(send_data)},
+          data: {JSON.stringify(send_data)},
           dataType: "json",
           beforeSend: function(x) {
             if (x && x.overrideMimeType) {
               x.overrideMimeType("application/j-son;charset=UTF-8");
             }
-          });
+          },
+       success: function (r) {
+                    alert(r.d.username);
+                }
+    });
     if (score > highscore){
     highscore = score;
     }
