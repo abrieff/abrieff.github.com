@@ -333,9 +333,9 @@ function game_over(){
     ctx.fillText("Game Over", 100, 300);
     var name = prompt("Game Over :( High Score! Enter Your Name:", "Name");
     game_over_count++;
-    send_data = {"game_title":"frogger", "username":name, "score":score}
+    send_data = {"game_title":"frogger", "username":name, "score":score};
     jQuery.ajax({
-          url: "http://highscoresapp.herokuapp.com/submit.json",
+          url: "http://gentle-caverns-1663.herokuapp.com/submit.json",
           type: "POST",
           data: send_data,
           dataType: "json",
