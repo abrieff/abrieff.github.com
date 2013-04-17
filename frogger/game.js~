@@ -335,7 +335,7 @@ function game_over(){
     game_over_count++;
     send_data = {"game_title":"frogger", "username":name, "score":score};
     jQuery.ajax({
-          url: "http://gentle-caverns-1663.herokuapp.com/submit.json",
+          url: 'http://localhost:5000/submit.json',
           type: "POST",
           data: send_data,
           dataType: "json",
