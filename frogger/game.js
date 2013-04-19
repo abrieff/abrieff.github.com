@@ -345,7 +345,7 @@ function game_over(){
             }
           },
        success: function (r) {
-                    alert(r.d.username);
+                    alert("sent data");
                 }
     });
     if (score > highscore){
